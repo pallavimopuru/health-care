@@ -47,6 +47,9 @@ li {
   background-color: rgb(233 250 255);
   height: 100vh;
 }
+img{
+    opacity: 0.9;
+}
 .navbar .phone-icon {
   font-size: 20px;
   color: #23a075; /* Change the color to light green */
@@ -57,6 +60,13 @@ li {
 .navbar .phone-number {
   color: #23a075;
   font-size: 22px;
+}
+.navbar .phone-icon{
+    color: white;
+    background: green;
+    padding: 8px;
+    border-radius: 16px;
+    font-size: 12px;
 }
 .card {
   background-color: white;
