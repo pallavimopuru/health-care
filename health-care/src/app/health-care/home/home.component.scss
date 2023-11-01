@@ -92,6 +92,12 @@ img{
   cursor: pointer;
   font-weight: 400;
 }
+.book-now:hover{
+    background-color: white;
+    color: #23a075;
+    border: 2px solid #23a075;
+
+}
 .red-border {
   border-color: red;
 }
@@ -106,6 +112,10 @@ img{
   padding: 10px 29px;
   cursor: pointer;
   font-weight: 400;
+}
+.read-more:hover{
+    color: white;
+    background-color:#23a075;
 }
 //376563
 .title {
