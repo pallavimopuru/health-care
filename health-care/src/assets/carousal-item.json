@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Full dedicated to your dental health",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac elit at lectus",
+        "imagePath": "assets/healthcare1.jpg",
+        "subtitle":"Dental Health.",
+        "booknow":"Book now",
+        "readmore":"Read more"
+    },
+    {
+        "title": "Full dedicated to your dental health",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac elit at lectus",
+        "imagePath": "assets/healthcare2.jpg",
+        "subtitle":"Eye Health.",
+        "booknow":"Book now",
+        "readmore":"Read more"
+    },
+    {
+        "title": "Full dedicated to your dental health",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac elit at lectus",
+        "imagePath": "assets/healthcare3.jpg",
+        "subtitle":"Body Checkup.",
+        "booknow":"Book now",
+        "readmore":"Read more"
+    },
+    {
+        "title": "Full dedicated to your dental health",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac elit at lectus",
+        "imagePath": "assets/healthcare4.jpg",
+        "subtitle":"Scanning.",
+        "booknow":"Book now",
+        "readmore":"Read more"
+    }
+]

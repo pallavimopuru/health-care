@@ -1,1 +1,180 @@
-<p>home works!</p>
+<div class="container-fluid">
+  <div class="bg-litegreen">
+    <div class="row">
+      <div class="col-md-1">
+        <app-sidebar></app-sidebar>
+      </div>
+      <div class="col-md-11 mobile-top">
+        <div class="navbar">
+          <a routerLink="/">Home</a>
+          <a routerLink="/healthcare/services" >Services</a>
+          <a routerLink="/healthcare/aboutus">About us</a>
+          <a routerLink="/healthcare/appointment">Appointment</a>
+          <a routerLink="/healthcare/contact">Contact</a>
+          <a >
+            <i class="fas fa-phone phone-icon"></i>
+            <span class="phone-number">(+605)-1234-56789</span>
+          </a>
+        </div>
+        <div class="align-end menu" (click)="toggleMenu()"><i class="bi bi-list" *ngIf="!open"></i>
+            <i *ngIf="open" class="bi bi-x-lg"></i></div>
+        <div class="align-end">
+
+            <div class="navbar-mobile " *ngIf="open">
+                <ul>
+                <li routerLink="/">Home</li>
+                <li routerLink="/healthcare/services">Services</li>
+                <li routerLink="/healthcareaboutus">About us</li>
+                <li routerLink="/healthcareappointment">Appointment</li>
+                <li routerLink="/healthcarecontact">Contact</li>
+                <li >
+                  <i class="fas fa-phone phone-icon"></i>&nbsp;
+                  <span class="phone-number">(+605)-1234-56789</span>
+                </li>
+            </ul>
+              </div>
+        </div>
+        <div class="card col-11 mx-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide bg-dark"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators mt-3">
+                  <button
+                    *ngFor="let item of carouselData; let i = index"
+                    type="button"
+                    [attr.data-bs-target]="'#carouselExampleCaptions'"
+                    [attr.data-bs-slide-to]="i"
+                    [class.active]="i === 0"
+                    [attr.aria-current]="i === 0"
+                    [attr.aria-label]="'Slide ' + (i + 1)"
+                  ></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div
+                    *ngFor="let item of carouselData; let i = index"
+                    class="carousel-item"
+                    [class.active]="i === 0"
+                  >
+                    <img
+                      [src]="item.imagePath"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>{{ item.title }}</h2>
+                      <h2 class="title">{{ item.subtitle }}</h2>
+
+                      <p class="">{{ item.description }}</p>
+                      <div class="buttons">
+                        <button class="book-now">
+                          {{ item.booknow }}
+                          <i class="bi bi-play-circle-fill"></i>
+                        </button>
+                        <button class="read-more">
+                          {{ item.readmore }}
+                          <i class="bi bi-play-circle-fill"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-4">
+              <h3 class="title-appointment text-center my-3">
+                Book An Appointment
+              </h3>
+              <div class="container">
+               
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="firstName"
+                          formControlName="firstName"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Your last name*"
+                          name="lastName"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                 
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Your email address*"
+                          name="email"
+                        />
+                      </div>
+                    
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="contact">Contact</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Your contact no*"
+                          name="contact"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="date">Date</label>
+                          <input
+                            type="date"
+                            class="form-control"
+                            placeholder="Appointment date*"
+                            name="date"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="time">Time</label>
+                          <input
+                            type="time"
+                            class="form-control"
+                            placeholder="Appointment time*"
+                            name="time"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="submit mt-4">
+                    <button class="book-now">
+                      Book now <i class="bi bi-play-circle-fill"></i>
+                    </button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

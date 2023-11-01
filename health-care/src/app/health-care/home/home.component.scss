@@ -1,0 +1,164 @@
+.navbar a {
+  color: #0f4848;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.navbar-mobile a {
+  color: #0f4848;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.navbar-mobile {
+  background: white;
+  margin: 10px;
+  margin-top: -4px;
+  position: absolute;
+  border-radius: 6px;
+  width: 200px;
+  z-index: 7;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.active{
+    font-weight: 500 !important;
+    font-size: 1.0rem;
+    border-bottom: 0.3em solid #0f4848;
+    border-radius: 0;
+}
+li {
+  list-style-type: none;
+  color: #0f4848;
+  font-weight: 400;
+}
+.bi-list,
+.bi-x-lg {
+  font-size: 31px;
+}
+.align-end {
+  display: flex;
+  justify-content: end;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.bg-litegreen {
+  background-color: rgb(233 250 255);
+  height: 100vh;
+}
+.navbar .phone-icon {
+  font-size: 20px;
+  color: #23a075; /* Change the color to light green */
+  margin-right: 5px;
+}
+
+/* Styling for the phone number text */
+.navbar .phone-number {
+  color: #23a075;
+  font-size: 22px;
+}
+.card {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 544px;
+  margin: 20px 10px;
+  padding: 20px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 13px !important;
+  height: 13px !important;
+  border-radius: 50% !important;
+}
+.carousel-item img {
+  height: 500px;
+}
+.book-now {
+  background-color: #23a075; /* Background color */
+  border-radius: 40px;
+  color: white;
+  padding: 10px 29px;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+}
+.red-border {
+  border-color: red;
+}
+.carousel-item img {
+  background-color: #436561;
+}
+.read-more {
+  background-color: transparent;
+  border: 2px solid #23a075; /* Green border */
+  border-radius: 40px;
+  color: #23a075;
+  padding: 10px 29px;
+  cursor: pointer;
+  font-weight: 400;
+}
+//376563
+.title {
+  color: #23a075;
+}
+.carousel-caption {
+  text-align: left !important;
+}
+@media (max-width: 490px) {
+  .mobile-top {
+    margin-top: 5rem;
+  }
+  .bg-litegreen {
+    height: 231vh;
+  }
+  .navbar {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .title-appointment {
+    color: #23a075;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+}
+label {
+  color: #818181;
+  margin-top: 10px;
+}
+input {
+  background-color: #efefef;
+  border-radius: 21px;
+}
+::placeholder {
+  color: #adadad;
+}
+.title-appointment {
+  color: #23a075;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) and (max-width: 2368px) {
+  .menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1188px) {
+  .buttons {
+    display: grid;
+    .button {
+      margin: 4px;
+    }
+  }
+  .menu {
+    display: none;
+  }
+}
